@@ -167,6 +167,7 @@ function Weight() {
                     date: '',
                     weight: '',
                 })
+                window.location.reload();
             }
         } catch (error) {
             console.error('Could not add student', error);
@@ -228,7 +229,7 @@ function Weight() {
                     </Row>
                     <Row>
                         <h2 style={{paddingTop: "20px"}}>
-                            Most 30 Recently Entered Weights
+                            Weights Entered Within Past 30 Days
                         </h2>
                         <ul>
                             {pastWeight.map((value, index) => 
@@ -239,7 +240,7 @@ function Weight() {
                     </Row>
                     <Row>
                         <h2 style={{paddingTop: "20px"}}>
-                            Average of the 30 Entered Weights
+                            Average of Entered Weights Within Past 30 Days
                         </h2>
                             {pastWeightAvg.map((value, index) => 
                             <p style={{color: "red", textAlign: "center", fontSize: "150%", border: "1px dotted black"}} key={index}>
@@ -252,7 +253,7 @@ function Weight() {
                         </h2>
                             {pastWeightAvg.map((value, index) => 
                             <p style={{color: "red", textAlign: "center", fontSize: "100%", border: "1px dotted black"}} key={index}>
-                                Your average weight in the past 30 days has been {value.averageWeight} lbs!
+                                Your average weight within the past 30 days has been {value.averageWeight} lbs!
                                 That is <u>ABSOLUTELY</u> amazing. 
                                 <br></br>
                                 <br></br>
