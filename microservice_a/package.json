@@ -1,0 +1,20 @@
+{
+  "name": "cs361_microservice_a_for_phillip_ly",
+  "version": "1.0.0",
+  "description": "Provides data that shows most 30 recent entered weights and takes average of the weight",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Tony Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
