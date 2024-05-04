@@ -238,13 +238,30 @@ function Weight() {
                         </ul>
                     </Row>
                     <Row>
-                    <h2 style={{paddingTop: "20px"}}>
-                        Average of the 30 Entered Weights
-                    </h2>
-                        {pastWeightAvg.map((value, index) => 
-                        <p style={{color: "red", textAlign: "center", fontSize: "150%", border: "1px dotted black"}} key={index}>
-                            {value.averageWeight} lbs
-                        </p>)}
+                        <h2 style={{paddingTop: "20px"}}>
+                            Average of the 30 Entered Weights
+                        </h2>
+                            {pastWeightAvg.map((value, index) => 
+                            <p style={{color: "red", textAlign: "center", fontSize: "150%", border: "1px dotted black"}} key={index}>
+                                {value.averageWeight} lbs
+                            </p>)}
+                    </Row>
+                    <Row>
+                        <h2 style={{paddingTop: "20px"}}>
+                            You Can Do It!
+                        </h2>
+                            {pastWeightAvg.map((value, index) => 
+                            <p style={{color: "red", textAlign: "center", fontSize: "100%", border: "1px dotted black"}} key={index}>
+                                Your average weight in the past 30 days has been {value.averageWeight} lbs!
+                                That is <u>ABSOLUTELY</u> amazing. 
+                                <br></br>
+                                <br></br>
+                                No matter how difficult the journey is, keep up the hard work.
+                                Remember, safe daily calorie deficit and an increase but consistent physical activity do work for most.
+                                <br></br>
+                                <br></br>
+                                It will absolutely <em>pay off</em>!
+                            </p>)}
                     </Row>
                 </Container>
             </Container>
