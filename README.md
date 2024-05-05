@@ -15,7 +15,7 @@ The retrieved data is used to show the user the weights logged by him or her wit
 
 1) Microservice A backend folder must be placed within the root of the main application
 
-2) To request the average of the user's entered weight within the past 30 days, then the following API must be called /fetched:  http://localhost:4283/weight
+2) To request the average of the user's entered weight within the past 30 days, then the following API must be called /fetched:  http://localhost:4283/past-weight
 
 3) This API can be called via the following example:
 ```
