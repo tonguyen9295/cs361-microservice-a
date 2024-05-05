@@ -128,4 +128,5 @@ await fetch('http://localhost:4282/past-weight-avg')
 
 <h4>UML Diagram</h4>
 
-![UML_microservice_A drawio](https://github.com/tonguyen9295/cs361-microservice-a/assets/91217918/ebb147bc-07d0-4f95-a1cd-96e3433a2591)
+![UML_microservice_A drawio](https://github.com/tonguyen9295/cs361-microservice-a/assets/91217918/abdcf0d3-2181-4de3-b397-248370213d42)
+
