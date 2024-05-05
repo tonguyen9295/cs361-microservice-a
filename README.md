@@ -11,29 +11,19 @@ The retrieved data is used to show the user the weights logged by him or her wit
 
 ## Communication Contract
 
-In order to programmatically <b>request</b> data from Microservice A, for Phillip's main application on the frontend with use of React:
+<i>In order to programmatically <b>request</b> data from Microservice A, for Phillip's main application on the frontend with use of React</i>:
 
 1) Microservice A backend folder must be placed within the root of the main application
 
-2a) To request the user's entered weight within the past 30 days, then the following API must be called / fetched:  http://localhost:4282/past-weight-avg
+2) To request the user's entered weight within the past 30 days, then the following API must be called / fetched:  http://localhost:4282/past-weight-avg
 
-2b) The API must be called / fetched in the Weights.js page of the main application's component page.
+3) To request the average of the user's entered weight within the past 30 days, then the following API must be called /fetched:  http://localhost:4283/weight
 
-2c) Example call when code is inserted in Weights.js page of the main application's component page:
-
-
-3a) To request the average of the user's entered weight within the past 30 days, then the following API must be called /fetched:  http://localhost:4283/weight
-
-3b) Example call when code is inserted in Weights.js page of the main application's component page:
-
-3c) Example call:
-
-
-In order to programmatically <b>receive</b> data from Microservice A:
+<i>In order to programmatically <b>receive</b> data from Microservice A</i>:
 
 1) Microservice A backend folder must be placed within the root of the main application
 
-2a) To receive the user's entered weight within the past 30 days, then the following code example could be used in Weights.js page of the component folder of main application:
+2) To receive the user's entered weight within the past 30 days, then the following code example could be used in Weights.js page of the component folder of main application:
 ```
     /*
     logic to obtain the 30 most recently entered weight and save data to pastWeight state
@@ -57,7 +47,7 @@ In order to programmatically <b>receive</b> data from Microservice A:
     };
 ```
 
-2b) To utilize and render the user's entered weight data for the past 30 days, then the following code example could be used in Weights.js page of the component folder of main application in the code section of returning page content:
+3) To utilize and render the user's entered weight data for the past 30 days, then the following code example could be used in Weights.js page of the component folder of main application in the code section of returning page content:
 ```
                     <Row>
                         <h2 style={{paddingTop: "20px"}}>
@@ -72,7 +62,7 @@ In order to programmatically <b>receive</b> data from Microservice A:
                     </Row>
 ```
 
-3a) To request the average of the user's entered weight within the past 30 days, then the following code example could be used in Weights.js page of the component folder of main application:
+4) To request the average of the user's entered weight within the past 30 days, then the following code example could be used in Weights.js page of the component folder of main application:
 ```
     /*
     logic to get the average of the 30 most recently entered weight and save data to pastWeightAvg state
@@ -96,7 +86,7 @@ In order to programmatically <b>receive</b> data from Microservice A:
     };
 ```
 
-3b) To utilize and render the average of the user's entered weight within the past 30 days and show the average in a motivational paragraph, then the following code example could be used in Weights.js page of the component folder of main application in the code section of returning page content:
+5) To utilize and render the average of the user's entered weight within the past 30 days and show the average in a motivational paragraph, then the following code example could be used in Weights.js page of the component folder of main application in the code section of returning page content:
 ```
                     <Row>
                         <h2 style={{paddingTop: "20px"}}>
