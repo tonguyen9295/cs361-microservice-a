@@ -11,15 +11,25 @@ The retrieved data is used to show the user the weights logged by him or her wit
 
 ## Communication Contract
 
-<i>In order to programmatically <b>request</b> data from Microservice A, for Phillip's main application on the frontend with use of React</i>:
+<h4>In order to programmatically <b>request</b> data from Microservice A, for Phillip's main application on the frontend with use of React</h4>
 
 1) Microservice A backend folder must be placed within the root of the main application
 
-2) To request the user's entered weight within the past 30 days, then the following API must be called / fetched:  http://localhost:4282/past-weight-avg
+2) To request the average of the user's entered weight within the past 30 days, then the following API must be called /fetched:  http://localhost:4283/weight
 
-3) To request the average of the user's entered weight within the past 30 days, then the following API must be called /fetched:  http://localhost:4283/weight
+3) This API can be called via the following example:
+```
+await fetch('http://localhost:4282/past-weight')
+```
 
-<i>In order to programmatically <b>receive</b> data from Microservice A</i>:
+4) To request the user's entered weight within the past 30 days, then the following API must be called / fetched:  http://localhost:4282/past-weight-avg
+
+5) This API can be called via the following example:
+```
+await fetch('http://localhost:4282/past-weight-avg')
+```
+
+<h4>In order to programmatically <b>receive</b> data from Microservice A</h4>
 
 1) Microservice A backend folder must be placed within the root of the main application
 
